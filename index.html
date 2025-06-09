@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>3D Solar System</title>
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+
+  <!-- Speed Control Panel -->
+<div id="controls">
+
+  <label><i class="fa-solid fa-meteor"></i> Mercury <input type="range" id="mercurySpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-solid fa-globe"></i> Venus <input type="range" id="venusSpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-solid fa-earth-americas"></i> Earth <input type="range" id="earthSpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-solid fa-mars"></i> Mars <input type="range" id="marsSpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-brands fa-jedi-order"></i> Jupiter <input type="range" id="jupiterSpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-brands fa-sith"></i> Saturn <input type="range" id="saturnSpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-solid fa-circle-dot"></i> Uranus <input type="range" id="uranusSpeed" min="0.1" max="5" step="0.1" value="1"></label><br>
+  <label><i class="fa-solid fa-circle-half-stroke"></i> Neptune <input type="range" id="neptuneSpeed" min="0.1" max="5" step="0.1" value="1"></label>
+  <button id="toggleBtn" class="pause-button">⏸ Pause</button>
+
+</div>
+
+
+
+  <!-- Main JS File (load after DOM is ready) -->
   <script src="js/main.js"></script>
+
 </body>
 </html>
